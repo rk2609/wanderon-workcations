@@ -1,0 +1,496 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workcations</title>
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 900px)"
+      href="properties-desktop.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 900px)"
+      href="properties-mobile.css"
+    />
+    <script src="properties.js" async></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href="https://www.wanderon.in/" class="header_logo"
+        ><img
+          src="https://www.wanderon.in/wp-content/uploads/2018/11/black.png"
+      /></a>
+      <div class="header_menu">
+        <a class="header_menu_option" href="https://www.wanderon.in/workcations"
+          >Workcations</a
+        >
+        <a
+          class="header_menu_option"
+          href="https://www.wanderon.in/sanitised-taxi-services/"
+          >Book Sanitised Taxi</a
+        >
+        <a
+          class="header_menu_option"
+          href="https://www.wanderon.in/backpacking-trips/"
+          >Backpacking Trips</a
+        >
+        <a class="header_menu_option" href="https://www.wanderon.in/blogs/"
+          >Blogs</a
+        >
+      </div>
+      <div class="hamburger">
+        <button
+          class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); document.querySelector('.header_menu').classList.toggle('header_menu_open'); document.querySelector('.filters-top-container').classList.toggle('filters-top-container-open');"
+          aria-label="Main Menu"
+        >
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="cover" style="background-image: url(workcations-cover.png);">
+      <span>Why Work From Home when you can actually work remotely?</span>
+    </div>
+    <div class="page-container">
+      <div class="filters-top-container">
+        <h2 class="headline">find your <span>Workcation</span></h2>
+        <div class="filters-container">
+          <!--<div class="filter-wrapper">
+                    <div class="filter-name">Destination</div>
+                    <div class="filter-value">
+                        <div class="dropdown-wrapper">
+                            <div tabindex="0" class="dropdown-container" aria-labelledby="Select" aria-expanded="false" aria-readonly="true">
+                                <div class="dropdown-heading">
+                                    <div class="dropdown-heading-value">
+                                        <span class="gray">Select...</span>
+                                    </div>
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" class="dropdown-heading-dropdown-arrow gray"><path d="M6 9L12 15 18 9"></path></svg>
+                                    <div class="go2300146088 dropdown-content">
+                                        <div class="panel-content">
+                                            <div class="select-panel" role="listbox">
+                                                <div class="go2560978628"><input placeholder="Search" type="search" aria-describedby="Search"></div><label
+                                                    class="go2014367929 select-item false" role="option" aria-selected="false" tabindex="1">
+                                                    <div class="go335935385 item-renderer undefined"><input type="checkbox" tabindex="-1"><span>Any
+                                                            Destination</span></div>
+                                                </label>
+                                                <ul class="go1853859513">
+                                                    <li><label class="go2014367929 select-item false" role="option" aria-selected="false" tabindex="2">
+                                                            <div class="go335935385 item-renderer undefined"><input type="checkbox"
+                                                                    tabindex="-1"><span>Mussoorie</span></div>
+                                                        </label></li>
+                                                    <li><label class="go2014367929 select-item false" role="option" aria-selected="false" tabindex="3">
+                                                            <div class="go335935385 item-renderer undefined"><input type="checkbox"
+                                                                    tabindex="-1"><span>Binsar</span></div>
+                                                        </label></li>
+                                                    <li><label class="go2014367929 select-item false" role="option" aria-selected="false" tabindex="4">
+                                                            <div class="go335935385 item-renderer undefined"><input type="checkbox"
+                                                                    tabindex="-1"><span>Bir</span></div>
+                                                        </label></li>
+                                                    <li><label class="go2014367929 select-item false" role="option" aria-selected="false" tabindex="5">
+                                                            <div class="go335935385 item-renderer undefined"><input type="checkbox"
+                                                                    tabindex="-1"><span>Pauri</span></div>
+                                                        </label></li>
+                                                    <li><label class="go2014367929 select-item false" role="option" aria-selected="false" tabindex="6">
+                                                            <div class="go335935385 item-renderer undefined"><input type="checkbox"
+                                                                    tabindex="-1"><span>Almora</span></div>
+                                                        </label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+          <div class="filter-wrapper">
+            <div class="filter-name">Duration</div>
+            <div class="filter-value">
+              <div class="duration-value">
+                <div
+                  class="stay-duration active"
+                  style="border-radius: 5px 0px 0px 5px;"
+                >
+                  Short Stay <span>(Upto 14 Days)</span>
+                </div>
+                <div
+                  class="stay-duration passive"
+                  style="border-radius: 0px 5px 5px 0px;"
+                >
+                  Long Stay <span>(14+ Days)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="displaylist-container">
+        <div class="propertylist-container">
+          <div class="property-container" onclick="window.open('W101.html')" ;>
+            <div class="property-image-container">
+              <div
+                class="property-main-image"
+                style="
+                  background-image: url(https://www.wanderon.in/workcations/a-house-in-the-hills/property-outer.jpg);
+                "
+              >
+                <span class="property-details-type apartment">apartment</span>
+              </div>
+              <div class="property-small-image-container">
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/a-house-in-the-hills/parking.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/a-house-in-the-hills/outer-sitting.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/a-house-in-the-hills/balcony.jpg);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="property-details">
+              <div class="property-details-name">
+                Workcations 101 - Apartment in Mussoorie
+              </div>
+              <div class="property-details-container">
+                <div class="property-details-wrapper">
+                  <div class="property-details-location">
+                    Mussoorie, Uttarakhand
+                  </div>
+                  <span class="property-details-type apartment">Apartment</span>
+                  <div class="property-details-safety">
+                    <img src="safety.svg" alt="Workcations Safety Verified" />
+                    <span>Workcations Safety Verified</span>
+                  </div>
+                  <div class="property-details-amenities-container">
+                    <span>Amenties</span>
+                    <div class="property-details-amenities-icons-container">
+                      <div class="property-details-amenities-icon">
+                        <img src="wifi.svg" alt="wifi" />
+                        <div>WiFi</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-pricing-container">
+                  Starting from<span class="INR 1900/-" id="INR 1700/-">
+                    INR 1900/-</span
+                  >per night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="property-container" onclick="window.open('W101.html')" ;>
+            <div class="property-image-container">
+              <div
+                class="property-main-image"
+                style="
+                  background-image: url(https://www.wanderon.in/workcations/eco-camps-resort/outside-sitting-area.jpg);
+                "
+              >
+                <span class="property-details-type resort">resort</span>
+              </div>
+              <div class="property-small-image-container">
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/eco-camps-resort/winter-wonderland.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/eco-camps-resort/night.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/eco-camps-resort/reception.jpg);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="property-details">
+              <div class="property-details-name">
+                Workcations 102 - Resort in Binsar
+              </div>
+              <div class="property-details-container">
+                <div class="property-details-wrapper">
+                  <div class="property-details-location">
+                    Binsar, Uttarakhand
+                  </div>
+                  <span class="property-details-type resort">Resort</span>
+                  <div class="property-details-safety">
+                    <img src="safety.svg" alt="Workcations Safety Verified" />
+                    <span>Workcations Safety Verified</span>
+                  </div>
+                  <div class="property-details-amenities-container">
+                    <span>Amenties</span>
+                    <div class="property-details-amenities-icons-container">
+                      <div class="property-details-amenities-icon">
+                        <img src="wifi.svg" alt="wifi" />
+                        <div>WiFi</div>
+                      </div>
+                      <div class="property-details-amenities-icon">
+                        <img src="power.svg" alt="power backup" />
+                        <div>Power Backup</div>
+                      </div>
+                      <div class="property-details-amenities-icon">
+                        <img src="meals.svg" alt="homely meals" />
+                        <div>Homely Meals</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-pricing-container">
+                  Starting from<span class="INR 1300/-" id="INR 1200/-">
+                    INR 1900/-</span
+                  >per night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="property-container" onclick="window.open('W101.html')" ;>
+            <div class="property-image-container">
+              <div
+                class="property-main-image"
+                style="
+                  background-image: url(https://www.wanderon.in/workcations/hotel-sky-diver/entry.jpg);
+                "
+              >
+                <span class="property-details-type hotel">Hotel</span>
+              </div>
+              <div class="property-small-image-container">
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/hotel-sky-diver/surroundings.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/hotel-sky-diver/balcony.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/hotel-sky-diver/dining.jpg);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="property-details">
+              <div class="property-details-name">
+                Workcations 103 - Hotel in Bir
+              </div>
+              <div class="property-details-container">
+                <div class="property-details-wrapper">
+                  <div class="property-details-location">
+                    Bir, Himachal Pradesh
+                  </div>
+                  <span class="property-details-type hotel">Hotel</span>
+                  <div class="property-details-safety">
+                    <img src="safety.svg" alt="Workcations Safety Verified" />
+                    <span>Workcations Safety Verified</span>
+                  </div>
+                  <div class="property-details-amenities-container">
+                    <span>Amenties</span>
+                    <div class="property-details-amenities-icons-container">
+                      <div class="property-details-amenities-icon">
+                        <img src="wifi.svg" alt="wifi" />
+                        <div>WiFi</div>
+                      </div>
+                      <div class="property-details-amenities-icon">
+                        <img src="power.svg" alt="power backup" />
+                        <div>Power Backup</div>
+                      </div>
+                      <div class="property-details-amenities-icon">
+                        <img src="meals.svg" alt="homely meals" />
+                        <div>Homely Meals</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-pricing-container">
+                  Starting from<span class="INR 1300/-" id="INR 1200/-">
+                    INR 1900/-</span
+                  >per night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="property-container" onclick="window.open('W101.html')" ;>
+            <div class="property-image-container">
+              <div
+                class="property-main-image"
+                style="
+                  background-image: url(https://www.wanderon.in/workcations/mumukshu-resort/cottage-room.jpg);
+                "
+              >
+                <span class="property-details-type resort">resort</span>
+              </div>
+              <div class="property-small-image-container">
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/mumukshu-resort/surrounding-views.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/mumukshu-resort/surroundings.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/mumukshu-resort/entry.jpg);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="property-details">
+              <div class="property-details-name">
+                Workcations 104 - Resort in Pauri
+              </div>
+              <div class="property-details-container">
+                <div class="property-details-wrapper">
+                  <div class="property-details-location">
+                    Pauri, Uttarakhand
+                  </div>
+                  <span class="property-details-type resort">Resort</span>
+                  <div class="property-details-safety">
+                    <img src="safety.svg" alt="Workcations Safety Verified" />
+                    <span>Workcations Safety Verified</span>
+                  </div>
+                  <div class="property-details-amenities-container">
+                    <span>Amenties</span>
+                    <div class="property-details-amenities-icons-container">
+                      <div class="property-details-amenities-icon">
+                        <img src="wifi.svg" alt="wifi" />
+                        <div>WiFi</div>
+                      </div>
+                      <div class="property-details-amenities-icon">
+                        <img src="power.svg" alt="power backup" />
+                        <div>Power Backup</div>
+                      </div>
+                      <div class="property-details-amenities-icon">
+                        <img src="meals.svg" alt="homely meals" />
+                        <div>Homely Meals</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-pricing-container">
+                  Starting from<span class="INR 1300/-" id="INR 1200/-">
+                    INR 1900/-</span
+                  >per night
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="property-container" onclick="window.open('W101.html')" ;>
+            <div class="property-image-container">
+              <div
+                class="property-main-image"
+                style="
+                  background-image: url(https://www.wanderon.in/workcations/rudra-himalayan-retreat/surrounding-view.jpg);
+                "
+              >
+                <span class="property-details-type hostel">Hostel</span>
+              </div>
+              <div class="property-small-image-container">
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/rudra-himalayan-retreat/balcony-view.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/rudra-himalayan-retreat/surroundings.jpg);
+                  "
+                ></div>
+                <div
+                  class="property-small-image"
+                  style="
+                    background-image: url(https://www.wanderon.in/workcations/rudra-himalayan-retreat/balcony.jpg);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="property-details">
+              <div class="property-details-name">
+                Workcations 105 - Hostel in Almora
+              </div>
+              <div class="property-details-container">
+                <div class="property-details-wrapper">
+                  <div class="property-details-location">
+                    Almora, Uttarakhand
+                  </div>
+                  <span class="property-details-type hostel">Hostel</span>
+                  <div class="property-details-safety">
+                    <img src="safety.svg" alt="Workcations Safety Verified" />
+                    <span>Workcations Safety Verified</span>
+                  </div>
+                  <div class="property-details-amenities-container">
+                    <span>Amenties</span>
+                    <div class="property-details-amenities-icons-container">
+                      <div class="property-details-amenities-icon">
+                        <img src="wifi.svg" alt="wifi" />
+                        <div>WiFi</div>
+                      </div>
+                      <div class="property-details-amenities-icon">
+                        <img src="power.svg" alt="power backup" />
+                        <div>Power Backup</div>
+                      </div>
+                      <div class="property-details-amenities-icon">
+                        <img src="meals.svg" alt="homely meals" />
+                        <div>Homely Meals</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-pricing-container">
+                  Starting from<span class="INR 800/-" id="INR 700/-">
+                    INR 1900/-</span
+                  >per night
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="sidebar.svg"
+          alt="Coronavirus Protection Practices"
+          class="displaylist-sidebar"
+        />
+      </div>
+    </div>
+  </body>
+</html>
